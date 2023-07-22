@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+body{
+    font-family: Noto sans, sans-serif;
+    margin: 0;
+}
+
+.icon-apple{
+    margin-right: auto;
+}
+
+.link-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4px 3%;
+    background: rgb(20, 20, 20);
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #adadad;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.check{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+}
+
+.descricao{
+    font-size: 13px;
+}
+
+.text-clean{
+    color: rgb(148, 148, 148);
+}
+
+.btn-comprar{
+    background: #0093E9;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 10px;
+    box-shadow: 0px 10px 14px -12px #0093E9;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn-comprar > a{
+    color: white;
+    border-bottom: none;
+}
+
+.descricao-2{
+    font-size: 15px;
+}
+
+.main-descrition .content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-descrition .content span{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px #888;
+    transition: all 0.5s;
+}
+
+.main-descrition .content span:hover{
+    opacity: .80;
+}
+
+#green{
+    background: #384937;
+}
+
+#pink{
+    background: #f8ddd6;
+}
+
+#blue{
+    background: #225f7e;
+}
+
+#black{
+    background: #192028;
+}
+
+#white{
+    background: #f7f2ee;
+}
+#red{
+    background: #ae0617;
+}
+
+.iphones{
+    transform: rotate(-7deg);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #445c42;
+    clip-path: circle(800px at right 1000px);
+}
+
+.iphones img{
+    animation: flutuacao 6s ease-in-out infinite;
+}
+
+@keyframes flutuacao{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}

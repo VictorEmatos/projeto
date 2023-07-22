@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    font-size: 2vh;
+    color: white;
+    background: #141414;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 2.5vh 12vw;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+span{
+    color: #9650F9;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    position: relative;
+    width: 30vw;
+    height: 50vh;
+    background: #201e1e;
+    margin-top: 20vh;
+    overflow: hidden;
+}
+
+.title{
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+    text-align: center;
+}
+
+.e-mail{
+    width: 23vw;
+    height: 7vh;
+    font-family: Poppins, sans-serif;
+    background-color: #141414;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    border-radius: 0.5vh;
+}
+
+.e-mail:hover{
+    transform: translateX(0.1px) scale(1.04);
+    background-color: #ff0000;
+}
+
+.um{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-gmail{
+    margin-right: 0.7vw;
+}
+
+.whats{
+    margin-top: 2vh;
+    width: 23vw;
+    height: 7vh;
+    font-family: Poppins, sans-serif;
+    background-color: #141414;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    border-radius: 0.5vh;
+}
+
+.whats:hover{
+    transform: translateX(0.1px) scale(1.04);
+    background-color: #2cc06c;
+}
+
+.dois{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-whats{
+    margin-right: 0.7vw;
+}
+
+.insta{
+    margin-top: 2vh;
+    width: 23vw;
+    height: 7vh;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+    background-color: #141414;
+    border: none;
+    color: white;
+    border-radius: 0.5vh;
+    transition: all 0.5s ease 0s;
+}
+
+.insta:hover{
+    transform: translateX(0.1px) scale(1.04);
+    background-color: #9650F9;
+}
+
+.tres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-insta{
+    margin-right: 0.7vw;
+}
+
+.center .span:first-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #9650F9);
+    animation: animar1 2s linear infinite;
+}
+
+@keyframes animar1{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.center .span:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #9650F9);
+    animation: animar2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animar2{
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.center .span:nth-of-type(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #9650F9);
+    animation: animar3 2s linear infinite;
+}
+
+@keyframes animar3{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.center .span:last-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #9650F9);
+    animation: animar4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animar4{
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateY(-100%);
+    }
+}
